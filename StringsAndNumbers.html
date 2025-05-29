@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <p id="outputText"></p>
+        <script>
+            var text1 = "10";
+            var text2 = "2";
+
+            var num1 = srtringToNumber(text1);
+            var num2 = srtringToNumber(text2);
+
+            if(isNaN(num1) || isNaN(num2)){
+                document.getElementById(outtext).innerHTML = "you have not entered valid number. please try again";
+                }else{
+                    document.getElementById("outputText").innerHTML = num1 + num2;
+                }
+            
+            
+
+            function srtringToNumber(text){
+                return parseInt(text);
+            }
+        </script>   
+    </body>
+</html>
